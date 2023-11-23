@@ -1,0 +1,15 @@
+{
+	"name": "kr-stylebox",
+	"version": "1.0.0",
+	"description": "Klickrhein Stylebox",
+	"main": "compiler.js",
+	"scripts": {
+		"build": "node ./compiler.js"
+	},
+	"keywords": [],
+	"author": "Felix Heidecke",
+	"license": "ISC",
+	"dependencies": {
+		"sass": "^1.69.5"
+	}
+}

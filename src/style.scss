@@ -1,0 +1,7 @@
+@import 'variables', 'base', 'fonts', 'list', 'helper';
+
+:root {
+	@each $query, $size in $mediaquery {
+		--#{$query}: #{$size};
+	}
+}

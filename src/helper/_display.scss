@@ -1,0 +1,22 @@
+.\$hidden.\$hidden {
+	display: none !important;
+}
+
+.\$block.\$block {
+	display: block !important;
+}
+
+.\$inline-block.\$inline-block {
+	display: inline-block !important;
+}
+
+@each $size, $query in $mediaquery {
+	@media #{$query} {
+		.\$hidden\@#{$size}.\$hidden\@#{$size} {
+			display: none !important;
+		}
+		.\$block\@#{$size}.\$block\@#{$size} {
+			display: block !important;
+		}
+	}
+}

@@ -1,0 +1,150 @@
+.\$m.\$m {
+	margin: 1rem;
+}
+
+.\$mt.\$mt {
+	margin-top: 1rem;
+}
+
+.\$mr.\$mr {
+	margin-right: 1rem;
+}
+
+.\$mb.\$mb {
+	margin-bottom: 1rem;
+}
+
+.\$ml.\$ml {
+	margin-left: 1rem;
+}
+
+.\$mx.\$mx {
+	margin: {
+		left: 1rem;
+		right: 1rem;
+	}
+}
+
+.\$mx-auto.\$mx-auto {
+	margin: {
+		left: auto;
+		right: auto;
+	}
+}
+
+.\$my.\$my {
+	margin: {
+		top: 1rem;
+		bottom: 1rem;
+	}
+}
+
+@each $a, $b in $spacing {
+	.\$m-#{$a}.\$m-#{$a} {
+		margin: $b;
+	}
+
+	.\$mt-#{$a}.\$mt-#{$a} {
+		margin-top: $b;
+	}
+
+	.\$mr-#{$a}.\$mr-#{$a} {
+		margin-right: $b;
+	}
+
+	.\$mb-#{$a}.\$mb-#{$a} {
+		margin-bottom: $b;
+	}
+
+	.\$ml-#{$a}.\$ml-#{$a} {
+		margin-left: $b;
+	}
+
+	.\$mx-#{$a}.\$mx-#{$a} {
+		margin: {
+			left: $b;
+			right: $b;
+		}
+	}
+
+	.\$my-#{$a}.\$my-#{$a} {
+		margin: {
+			top: $b;
+			bottom: $b;
+		}
+	}
+}
+
+@each $size, $query in $mediaquery {
+	@media #{$query} {
+		.\$m\@#{$size}.\$m\@#{$size} {
+			margin: 1rem;
+		}
+
+		.\$mt\@#{$size}.\$mt\@#{$size} {
+			margin-top: 1rem;
+		}
+
+		.\$mr\@#{$size}.\$mr\@#{$size} {
+			margin-right: 1rem;
+		}
+
+		.\$mb\@#{$size}.\$mb\@#{$size} {
+			margin-bottom: 1rem;
+		}
+
+		.\$ml\@#{$size}.\$ml\@#{$size} {
+			margin-left: 1rem;
+		}
+
+		.\$mx\@#{$size}.\$mx\@#{$size} {
+			margin: {
+				left: 1rem;
+				right: 1rem;
+			}
+		}
+
+		.\$my\@#{$size}.\$my\@#{$size} {
+			margin: {
+				top: 1rem;
+				bottom: 1rem;
+			}
+		}
+
+		@each $a, $b in $spacing {
+			.\$m-#{$a}\@#{$size}.\$m-#{$a}\@#{$size} {
+				margin: $b;
+			}
+
+			.\$mt-#{$a}\@#{$size}.\$mt-#{$a}\@#{$size} {
+				margin-top: $b;
+			}
+
+			.\$mr-#{$a}\@#{$size}.\$mr-#{$a}\@#{$size} {
+				margin-right: $b;
+			}
+
+			.\$mb-#{$a}\@#{$size}.\$mb-#{$a}\@#{$size} {
+				margin-bottom: $b;
+			}
+
+			.\$ml-#{$a}\@#{$size}.\$ml-#{$a}\@#{$size} {
+				margin-left: $b;
+			}
+
+			.\$mx-#{$a}\@#{$size}.\$mx-#{$a}\@#{$size} {
+				margin: {
+					left: $b;
+					right: $b;
+				}
+			}
+
+			.\$my-#{$a}\@#{$size}.\$my-#{$a}\@#{$size} {
+				margin: {
+					top: $b;
+					bottom: $b;
+				}
+			}
+		}
+	}
+}

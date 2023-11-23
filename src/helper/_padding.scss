@@ -1,0 +1,147 @@
+.\$p.\$p {
+	padding: 1rem;
+}
+
+.\$pt.\$pt {
+	padding-top: 1rem;
+}
+
+.\$pr.\$pr {
+	padding-right: 1rem;
+}
+
+.\$pb.\$pb {
+	padding-bottom: 1rem;
+}
+
+.\$pl.\$pl {
+	padding-left: 1rem;
+}
+
+.\$px.\$px {
+	padding: {
+		left: 1rem;
+		right: 1rem;
+	}
+}
+
+.\$py.\$py {
+	padding: {
+		top: 1rem;
+		bottom: 1rem;
+	}
+}
+
+@each $a, $b in $spacing {
+	.\$p-#{$a}.\$p-#{$a} {
+		padding: $b;
+	}
+
+	.\$pt-#{$a}.\$pt-#{$a} {
+		padding-top: $b;
+	}
+
+	.\$pr-#{$a}.\$pr-#{$a} {
+		padding-right: $b;
+	}
+
+	.\$pb-#{$a}.\$pb-#{$a} {
+		padding-bottom: $b;
+	}
+
+	.\$pl-#{$a}.\$pl-#{$a} {
+		padding-left: $b;
+	}
+
+	.\$px-#{$a}.\$px-#{$a} {
+		padding: {
+			left: $b;
+			right: $b;
+		}
+	}
+
+	.\$py-#{$a}.\$py-#{$a} {
+		padding: {
+			top: $b;
+			bottom: $b;
+		}
+	}
+}
+
+@each $size, $query in $mediaquery {
+	@media #{$query} {
+		.\$p\@#{$size}.\$p\@#{$size} {
+			padding: 1rem;
+		}
+
+		.\$pt\@#{$size}.\$pt\@#{$size} {
+			padding-top: 1rem;
+		}
+
+		.\$pr\@#{$size}.\$pr\@#{$size} {
+			padding-right: 1rem;
+		}
+
+		.\$pb\@#{$size}.\$pb\@#{$size} {
+			padding-bottom: 1rem;
+		}
+
+		.\$pl\@#{$size}.\$pl\@#{$size} {
+			padding-left: 1rem;
+		}
+
+		.\$px\@#{$size}.\$px\@#{$size} {
+			padding: {
+				left: 1rem;
+				right: 1rem;
+			}
+		}
+
+		.\$py\@#{$size}.\$py\@#{$size} {
+			padding: {
+				top: 1rem;
+				bottom: 1rem;
+			}
+		}
+
+		@each $a, $b in $spacing {
+			.\$p-#{$a}\@#{$size}.\$p-#{$a}\@#{$size} {
+				padding: $b;
+			}
+
+			.\$p-#{$a}\@#{$size}.\$p-#{$a}\@#{$size} {
+				padding: $b;
+			}
+
+			.\$pt-#{$a}\@#{$size}.\$pt-#{$a}\@#{$size} {
+				padding-top: $b;
+			}
+
+			.\$pr-#{$a}\@#{$size}.\$pr-#{$a}\@#{$size} {
+				padding-right: $b;
+			}
+
+			.\$pb-#{$a}\@#{$size}.\$pb-#{$a}\@#{$size} {
+				padding-bottom: $b;
+			}
+
+			.\$pl-#{$a}\@#{$size}.\$pl-#{$a}\@#{$size} {
+				padding-left: $b;
+			}
+
+			.\$px-#{$a}\@#{$size}.\$px-#{$a}\@#{$size} {
+				padding: {
+					left: $b;
+					right: $b;
+				}
+			}
+
+			.\$py-#{$a}\@#{$size}.\$py-#{$a}\@#{$size} {
+				padding: {
+					top: $b;
+					bottom: $b;
+				}
+			}
+		}
+	}
+}

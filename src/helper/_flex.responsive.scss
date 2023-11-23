@@ -1,0 +1,82 @@
+@each $size, $query in $mediaquery {
+	@media #{$query} {
+		.\$flex\@#{$size}.\$flex\@#{$size} {
+			display: flex;
+		}
+
+		.\$flex-wrap\@#{$size}.\$flex-wrap\@#{$size} {
+			flex-wrap: wrap;
+		}
+
+		.\$inline-flex\@#{$size}.\$inline-flex\@#{$size} {
+			display: inline-flex;
+		}
+
+		.\$row-reverse\@#{$size}.\$row-reverse\@#{$size} {
+			flex-direction: row-reverse;
+			justify-content: flex-end;
+		}
+
+		.\$flex-column\@#{$size}.\$flex-column\@#{$size} {
+			flex-direction: column;
+		}
+
+		.\$gap\@#{$size}.\$gap\@#{$size} {
+			gap: 1rem;
+		}
+
+		.\$column-gap\@#{$size}.\$column-gap\@#{$size} {
+			column-gap: 1rem;
+		}
+
+		.\$items-center\@#{$size}.\$items-center\@#{$size} {
+			align-items: center;
+		}
+
+		.\$items-start\@#{$size}.\$items-start\@#{$size} {
+			align-items: start;
+		}
+
+		.\$items-end\@#{$size}.\$items-end\@#{$size} {
+			align-items: end;
+		}
+
+		.\$content-center\@#{$size}.\$content-center\@#{$size} {
+			justify-content: center;
+		}
+
+		.\$space-between\@#{$size}.\$space-between\@#{$size} {
+			justify-content: space-between;
+		}
+
+		.\$space-around\@#{$size}.\$space-around\@#{$size} {
+			justify-content: space-around;
+		}
+
+		.\$content-left\@#{$size}.\$content-left\@#{$size} {
+			justify-content: left;
+		}
+
+		.\$content-right\@#{$size}.\$content-right\@#{$size} {
+			justify-content: right;
+		}
+
+		.\$order-1\@#{$size}.\$order-1\@#{$size} {
+			order: 1;
+		}
+
+		.\$order-2\@#{$size}.\$order-2\@#{$size} {
+			order: 2;
+		}
+
+		.\$order-3\@#{$size}.\$order-3\@#{$size} {
+			order: 3;
+		}
+
+		@each $a, $b in $spacing {
+			.\$gap-#{$a}\@#{$size}.\$gap-#{$a}\@#{$size} {
+				gap: $b;
+			}
+		}
+	}
+}

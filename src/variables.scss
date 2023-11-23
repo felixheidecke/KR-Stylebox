@@ -1,0 +1,40 @@
+@mixin breakpoint($bp) {
+	@each $query, $size in $mediaquery {
+		@if $bp == $query {
+			@media #{$size} {
+				@content;
+			}
+		}
+	}
+}
+
+// --- Maps
+
+$size: (
+	smaller: 0.75rem,
+	small: 0.875rem,
+	large: 1.125rem,
+	larger: 1.25rem
+);
+
+$spacing: (
+	0: 0,
+	'1\\/4': 0.25rem,
+	'1\\/2': 0.5rem,
+	2: 2rem,
+	3: 3rem,
+	4: 4rem,
+	5: 5rem,
+	6: 6rem
+);
+
+$mediaquery: (
+	'mobile': '(max-width: 640px)',
+	'tablet': '(min-width: 641px) and (max-width: 1024px)',
+	'tablet-up': '(min-width: 641px)',
+	'tablet-down': '(max-width: 1024px)',
+	'desktop': '(min-width: 1025px) and (max-width: 1440px)',
+	'desktop-up': '(min-width: 1025px)',
+	'desktop-down': '(max-width: 1440px)',
+	'widescreen': '(min-width: 1441px)'
+);
