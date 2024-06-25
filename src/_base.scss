@@ -54,6 +54,9 @@ abbr {
 		}
 	}
 }
+:where(figure) {
+	margin: 0;
+}
 
 :where(img) {
 	max-width: 100%;

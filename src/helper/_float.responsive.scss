@@ -1,0 +1,11 @@
+@each $size, $query in $mediaquery {
+	@media #{$query} {
+		.\$float-left\@#{$size}.\$float-left\@#{$size} {
+			float: left;
+		}
+
+		.\$float-right\@#{$size}.\$float-right\@#{$size} {
+			float: right;
+		}
+	}
+}
