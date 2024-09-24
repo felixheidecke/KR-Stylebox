@@ -1,4 +1,4 @@
-@import 'variables', 'base', 'fonts', 'list', 'helper';
+@import 'variables', 'base', 'fonts', 'list', 'helper', 'fontello', 'fontello-codes';
 
 :root {
 	@each $query, $size in $mediaquery {

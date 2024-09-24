@@ -1,5 +1,9 @@
 # Patch Notes
 
+## Version `1.0.4`
+
+- Add fontello icons
+
 ## Version `1.0.2`
 
 - Add font sizing for `dd` and `dt`
