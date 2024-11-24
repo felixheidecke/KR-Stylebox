@@ -1,22 +1,24 @@
+@use '../variables';
+
 .\$hidden.\$hidden {
-	display: none !important;
+	display: none;
 }
 
 .\$block.\$block {
-	display: block !important;
+	display: block;
 }
 
 .\$inline-block.\$inline-block {
-	display: inline-block !important;
+	display: inline-block;
 }
 
-@each $size, $query in $mediaquery {
+@each $size, $query in variables.$mediaquery {
 	@media #{$query} {
 		.\$hidden\@#{$size}.\$hidden\@#{$size} {
-			display: none !important;
+			display: none;
 		}
 		.\$block\@#{$size}.\$block\@#{$size} {
-			display: block !important;
+			display: block;
 		}
 	}
 }

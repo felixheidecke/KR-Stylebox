@@ -1,29 +1,27 @@
-.\$font {
-	&-small {
-		font-size: 0.875rem;
-		line-height: 1.45rem;
-	}
+.\$font-small.\$font-small {
+	font-size: 0.875rem;
+	line-height: 1.45rem;
+}
 
-	&-smaller {
-		font-size: 0.75rem;
-		line-height: 1.45rem;
-	}
+.\$font-smaller.\$font-smaller {
+	font-size: 0.75rem;
+	line-height: 1.45rem;
+}
 
-	&-large {
-		font-size: 1.125rem;
-		line-height: 1.85rem;
-	}
+.\$font-large.\$font-large {
+	font-size: 1.125rem;
+	line-height: 1.85rem;
+}
 
-	&-larger {
-		font-size: 1.25rem;
-		line-height: 2rem;
-	}
+.\$font-larger.\$font-larger {
+	font-size: 1.25rem;
+	line-height: 2rem;
+}
 
-	&-bold {
-		font-weight: bold;
-	}
+.\$font-bold.\$font-bold {
+	font-weight: bold;
+}
 
-	&-italic {
-		font-style: italic;
-	}
+.\$font-italic.\$font-italic {
+	font-style: italic;
 }

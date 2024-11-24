@@ -78,6 +78,7 @@ body {
 :where(.h4),
 :where(p),
 :where(li),
+:where(dl),
 :where(dt),
 :where(dd) {
 	font-size: clamp(0.9rem, 0.8rem + 0.33vw, 1rem);

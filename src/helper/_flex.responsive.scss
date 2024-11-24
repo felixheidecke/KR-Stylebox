@@ -1,4 +1,6 @@
-@each $size, $query in $mediaquery {
+@use '../variables';
+
+@each $size, $query in variables.$mediaquery {
 	@media #{$query} {
 		.\$flex\@#{$size}.\$flex\@#{$size} {
 			display: flex;
@@ -73,7 +75,7 @@
 			order: 3;
 		}
 
-		@each $a, $b in $spacing {
+		@each $a, $b in variables.$spacing {
 			.\$gap-#{$a}\@#{$size}.\$gap-#{$a}\@#{$size} {
 				gap: $b;
 			}

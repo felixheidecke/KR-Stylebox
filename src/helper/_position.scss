@@ -1,24 +1,22 @@
-.\$ {
-	&relative {
-		position: relative;
-	}
+.\$relative.\$relative {
+	position: relative;
+}
 
-	&absolute {
-		position: absolute;
+.\$absolute.\$absolute {
+	position: absolute;
+}
 
-		&-center {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-	}
+.\$absolute-center.\$absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
-	&fixed {
-		position: fixed;
-	}
+.\$fixed.\$fixed {
+	position: fixed;
+}
 
-	&sticky {
-		position: sticky;
-	}
+.\$sticky.\$sticky {
+	position: sticky;
 }

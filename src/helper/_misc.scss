@@ -1,21 +1,19 @@
-.\$ {
-	&pointer {
-		cursor: pointer;
-	}
+.\$pointer.\$pointer {
+	cursor: pointer;
+}
 
-	&float-left {
-		float: left;
-	}
+.\$float-left.\$float-left {
+	float: left;
+}
 
-	&float-right {
-		float: right;
-	}
+.\$float-right.\$float-right {
+	float: right;
+}
 
-	&w-full {
-		width: 100%;
-	}
+.\$w-full.\$w-full {
+	width: 100%;
+}
 
-	&w-fit-content {
-		width: fit-content;
-	}
+.\$w-fit-content.\$w-fit-content {
+	width: fit-content;
 }
