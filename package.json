@@ -1,15 +1,15 @@
 {
-	"name": "kr-stylebox",
-	"version": "1.0.7",
-	"description": "Klickrhein Stylebox",
-	"main": "compiler.js",
-	"scripts": {
-		"build": "node ./compiler.js"
-	},
-	"keywords": [],
-	"author": "Felix Heidecke",
-	"license": "ISC",
-	"devDependencies": {
-		"sass": "^1.84.0"
-	}
+  "name": "kr-stylebox",
+  "version": "1.0.8",
+  "description": "Klickrhein Stylebox",
+  "main": "compiler.js",
+  "scripts": {
+    "build": "node ./compiler.js"
+  },
+  "keywords": [],
+  "author": "Felix Heidecke",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.84.0"
+  }
 }
