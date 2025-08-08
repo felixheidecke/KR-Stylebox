@@ -3,85 +3,85 @@
 *,
 *:after,
 *:before {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-	overflow-y: scroll;
-	overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
-	@include variables.breakpoint('mobile') {
-		font-size: 14px;
-	}
+  @include variables.breakpoint('mobile') {
+    font-size: 14px;
+  }
 
-	@include variables.breakpoint('tablet-up') {
-		font-size: 16px;
-	}
+  @include variables.breakpoint('tablet-up') {
+    font-size: 16px;
+  }
 }
 
 :where(body) {
-	margin: 0;
-	padding: 0;
-	background: #fff;
-	width: 100%;
-	min-height: 100vh;
-	color: #222;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  width: 100%;
+  min-height: 100vh;
+  color: #222;
 }
 
 :where(a),
 :where(a:hover),
 :where(a:active) {
-	color: currentColor;
+  color: currentColor;
 }
 
 abbr {
-	cursor: help;
+  cursor: help;
 }
 
 :where(hr) {
-	margin: 2rem 0 calc(2rem - 1px);
-	padding: 0;
-	border: 0;
-	border-bottom: 1px solid lightgray;
+  margin: 2rem 0 calc(2rem - 1px);
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid lightgray;
 }
 
 :where(blockquote) {
-	margin: 1rem 0;
-	padding: 0.01px 1rem;
+  margin: 1rem 0;
+  padding: 0.01px 1rem;
 
-	@include variables.breakpoint('tablet-up') {
-		margin: {
-			left: 2rem;
-			right: 2rem;
-		}
-	}
+  @include variables.breakpoint('tablet-up') {
+    margin: {
+      left: 2rem;
+      right: 2rem;
+    }
+  }
 }
 
 :where(figure) {
-	margin: 0;
+  margin: 0;
 }
 
 :where(img) {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 :where([style*='background-image']) {
-	background-size: contain;
+  background-size: contain;
 }
 
 // Tables
 
 :where(table) {
-	width: 100%;
-	border: 1px solid lightgray;
+  width: 100%;
+  border: 1px solid #eee;
 }
 
 :where(table thead) {
-	background-color: lightgray;
+  background-color: #eee;
 }
 
 :where(table th),
 :where(table td) {
-	padding: 0.5rem;
+  padding: 0.5rem;
 }
