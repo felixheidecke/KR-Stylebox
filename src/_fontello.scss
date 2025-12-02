@@ -1,8 +1,8 @@
 @font-face {
-	font-family: 'fontello';
-	src: url('./fonts/fontello.woff2') format('woff2'), url('./fonts/fontello.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'fontello';
+  src: url('./fonts/fontello.woff2') format('woff2'), url('./fonts/fontello.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 $fontello-size: 1rem;
@@ -10,31 +10,30 @@ $fontello-margin: 0.2rem;
 
 [class^='fontello-']:before,
 [class*=' fontello-']:before {
-	font-family: 'fontello';
-	font-style: normal;
-	font-weight: normal;
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
 
-	display: inline-block;
-	text-decoration: inherit;
-	width: $fontello-size;
-	margin-right: $fontello-margin;
-	text-align: center;
-	font-variant: normal;
-	text-transform: none;
-	text-indent: 0;
-	line-height: $fontello-size;
+  display: inline-block;
+  text-decoration: inherit;
+  margin-right: $fontello-margin;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  text-indent: 0;
+  line-height: $fontello-size;
 
-	/* Animation center compensation - margins should be symmetric */
-	/* remove if not needed */
-	margin-left: $fontello-margin;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: $fontello-margin;
 
-	/* Font smoothing. That was taken from TWBS */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 li[class^='fontello-'],
 li[class*=' fontello-'] {
-	padding-left: $fontello-size + $fontello-margin * 2;
-	text-indent: -$fontello-size + -$fontello-margin * 2;
+  padding-left: $fontello-size + $fontello-margin * 2;
+  text-indent: -$fontello-size + -$fontello-margin * 2;
 }
